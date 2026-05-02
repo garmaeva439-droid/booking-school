@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solux Hotel Valencia, Valencia, Spain</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            z-index: 100;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .marquee-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Solux Hotel Valencia</h1>
+            <p>Southern Region: Spain | Coastal Valencia</p>
+        </header>
+
+        <div class="section" id="about">
+            <h2>About the Hotel</h2>
+            <p>Welcome to Solux Hotel Valencia, a 4-star hotel located in the beautiful coastal city of Valencia, Spain. Our hotel offers comfortable accommodation with easy access to the beach and city attractions.</p>
+            <p><strong>Accessibility:</strong> Fully accessible for guests with disabilities.</p>
+        </div>
+
+        <div class="section" id="rooms">
+            <h2>Room Types and Prices (EUR)</h2>
+            <ul>
+                <li><strong>Single Room:</strong> Sleeps 1, €80/night</li>
+                <li><strong>Double Room:</strong> Sleeps 2, €120/night</li>
+                <li><strong>Triple Room:</strong> Sleeps 3, €160/night</li>
+            </ul>
+        </div>
+
+        <div class="section" id="zones">
+            <h2>Zones</h2>
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://attaches.1001tur.ru/hotels/gallery/628672/91991595848141.jpg">
+                </div>
+                <div class="slide">
+                    <img src="https://img.cdn.level.travel/hotels/9019514/9a1588141472c56abfa8bb92250b4ddc.jpg">
+                </div>
+                <div class="slide">
+                    <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/11/25125733/GYM-INTERIORS-FEATURE-compressed.jpg">
+                </div>
+                <div class="slide">
+                    <img src="https://img.freepik.com/premium-photo/shiny-stainless-steel-swimming-pool-handrails-blue-swimming-pool-edge-pool-floor-is-covered-with-smart-boards-there-are-many-beds-pool-chairs_634808-2728.jpg?semt=ais_hybrid&w=740&q=80">
+                </div>
+                <div class="slide">
+                    <img src="https://static.tildacdn.com/tild6265-6636-4161-b166-353536393035/hd_crop_d76eefd262e7.jpg">
+                </div>
+                <div class="slide">
+                    <img src="https://rosopeka.ru/Text/TextPhoto/products/hiro_320/hiro_320_9.jpg">
+                 </div>
+                <div class="slide">
+                    <img src="https://i.pinimg.com/736x/e3/93/9a/e3939a042d1e3afc289b865e829e6038.jpg">
+                </div>
+                <div class="slide">
+                     <img src="https://olymp-kzn.com/upload/iblock/71c/ihqhssc0e25s7cfv9pmi0oa10uhsulbg.jpeg">
+                </div>
+                <div class="slide">
+                     <img src="https://newsvo.ru/wp-content/uploads/2025/06/d29e620950f611f09512e6613866fbf8-1123040.jpg">
+                </div>
+                <div class="slide">
+                      <img src="file:///C:/Users/turis/Desktop/altana/Valencia-Center-Hotel.jpg">
+                </div>
+                <div class="slide">
+                       <img src="https://i.pinimg.com/736x/95/84/df/9584dfd11f24cbfc14b6684d49e9b00e.jpg">
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">‹</button>
+                <button class="next" onclick="changeSlide(1)">›</button>
+            </div>
+        </div>
+
+        <div class="section" id="features">
+            <h2>Hotel Features (4-Star)</h2>
+            <ul>
+                <li>Free Wi‑Fi</li>
+                <li>Swimming pool</li>
+                <li>Fitness center</li>
+                <li>Restaurant and bar</li>
+                <li>Parking available</li>
+                <li>24‑hour reception</li>
+                <li>Sea view</li>
+            </ul>
+        </div>
+
+        <div class="marquee-container">
+            <marquee behavior="scroll" direction="left" style="background: #e0f7fa; padding: 10px;">
+             Special Offer: Book now and get 10% off your stay!
+            </marquee>
+        </div>
+
+        <div class="section" id="promotion">
+            <h2>Promotion and Social Media</h2>
+            <p>Follow us on social media for the latest news and special offers:</p>
+            <ul>
+                <li><a href="#about">About the Hotel</a></li>
+                <li><a href="#rooms">Room Types</a></li>
+                <li><a href="#zones">Hotel Zones (Gallery)</a></li>
+                <li><a href="#features">Hotel Features</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+            </ul>
+        </div>
+
+<div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form action="send_email.php" method="POST">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Ваш email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Сообщение:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Отправить сообщение</button>
+    </form>
+</div>
+
+        <footer>
+<section>
+  <h2>FAQ</h2>
+  <details>
+    <summary>How do I book a room online?</summary>
+    <p>Currently, online booking is not available. Please make your reservation offline or contact us via official email</p>
+  </details>
+
+  <details>
+    <summary>Is food included in the room rate?</summary>
+    <p>Yes, a buffet breakfast is included in the room rate. It is served from 9 a.m. to 12 p.m..</p>
+  </details>
+
+  <details>
+    <summary>What is the distance to the sea?</summary>
+    <p>The hotel is located about 50 meters from the beach of the Mediterranean Sea.</p>
+  </details>
+</section>
+
+            <p>&copy; 2026 Solux Hotel Valencia. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(n) {
+            if (n >= slides.length) { currentSlide = 0 }
+            if (n < 0) { currentSlide = slides.length - 1 }
+            else { currentSlide = n }
+
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[currentSlide].style.display = 'block';
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+        }
+
+        // Initialize the slider
+        showSlide(0);
+    </script>
+</body>
+</html>
